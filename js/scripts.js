@@ -15,17 +15,17 @@ function hitungBMI() {
   // Determine BMI category and message
   let measure;
   if (bmi <= 18.4) {
-    measure = "Your BMI is " + bmi.toFixed(1) + " which means " + "you are Underweight";
+    measure = "BMI Anda adalah " + bmi.toFixed(1) + " yang artinya " + "Anda berat badan kurang";
   } else if (bmi >= 18.5 && bmi <= 24.9) {
-    measure = "Your BMI is " + bmi.toFixed(1) + " which means " + "You are Normal";
+    measure = "BMI Anda adalah " + bmi.toFixed(1) + " yang artinya " + "Anda normal";
   } else if (bmi >= 25 && bmi <= 29.9) {
-    measure = "Your BMI is " + bmi.toFixed(1) + " which means " + "You are Overweight";
+    measure = "BMI Anda adalah " + bmi.toFixed(1) + " yang artinya " + "Anda kelebihan berat badan";
   } else if (bmi >= 30) {
-    measure = "Your BMI is " + bmi.toFixed(1) + " which means " + "You are Obese";
+    measure = "BMI Anda adalah " + bmi.toFixed(1) + " yang artinya " + "Anda Obesitas";
   }
   
   // Display the result
   document.getElementById("hasilBMI").textContent = bmi.toFixed(1);
-  document.querySelector(".keterangan").innerHTML = `You are <span id="hasilBMI">${measure}</span>`;
+  document.querySelector(".keterangan").innerHTML = `<span id="hasilBMI">${measure}</span>`;
   document.getElementById("hasilContainer").style.display = "block"; // Show the result section 
   }
